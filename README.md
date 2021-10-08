@@ -23,3 +23,22 @@ ip6tables -I INPUT -p udp -m udp --sport 546:547 --dport 546:547 -j ACCEPT
 ip6tables -I INPUT -m conntrack --ctstate RELATED,ESTABLISHED -j ACCEPT
 reboot
 ```
+
+### Installazione
+Riferimento alla documentazione ufficiale: [Installation](https://docs.pi-hole.net/main/basic-install/)
+
+```bash
+curl -sSL https://install.pi-hole.net | bash
+pihole -a -p [NUOVA_PASSWORD]
+```
+
+Testare il corretto funzionamento di Pi-Hole all'indirizzo "[NOME_HOST]/admin" o [INDIRIZZO_IP]/admin
+
+### Aggiornamento
+Per effettuare l'aggiornamento, inserire il seguente comando
+
+```bash
+pihole -up
+```
+
+
