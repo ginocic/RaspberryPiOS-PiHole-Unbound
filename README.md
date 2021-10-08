@@ -136,7 +136,7 @@ Questo comando dovrebbe riportare lo status `NOERROR`
 Se entrambi sono i comandi riportano gli status correttamente allora la validazione DNSSEC funziona.
 
 ### Configurazione di Pi-Hole
-* Accedere alla pagina [NOME_HOST]/admin oppure [INDIRIZZO_IP]/admin
+* Accedere alla pagina **[NOME_HOST]/admin** oppure **[INDIRIZZO_IP]/admin**
 * Cliccare su:
     - `Settings`
     - `DNS`
@@ -146,7 +146,9 @@ Se entrambi sono i comandi riportano gli status correttamente allora la validazi
 * Aggiungere `127.0.0.1#5335` nella casella di testo
 * Cliccare su `Save` (in fondo alla pagina)
 * Aprire una sessione ssh oppure accedere al terminale:
-  ```bash cat /etc/resolv.conf```
+  ```bash
+  cat /etc/resolv.conf
+  ```
 
 * 
 
