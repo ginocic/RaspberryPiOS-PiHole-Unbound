@@ -140,6 +140,7 @@ Accedere alla pagina [NOME_HOST]/admin oppure [INDIRIZZO_IP]/admin
 Cliccare su:
   1. `Settings`
   2. `DNS`
+
 Deselezionare gli tutti `Upstream DNS Servers` eventualmente presenti.
 Selezionare `Custom 1 (IPv4)`
 Aggiungere `127.0.0.1#5335` nella casella di testo
