@@ -1,9 +1,9 @@
-# Installazione e configurazione del sistema operativo Raspberry Pi OS, Pi-Hole e Unbound
+# Installazione e configurazione del sistema operativo Raspberry Pi OS, Pi-hole e Unbound
 ## Installare e configurare Raspberry Pi OS
 Seguire quanto descritto [in questa guida](https://gist.github.com/ginocic/6c1f6e845266ac262f8b532d7405ddc7)
 
-## Installazione e configurazione di Pi-Hole
-Per l'installazione e la configurazione di Pi-Hole, ho seguito la [documentazione ufficiale](https://docs.pi-hole.net/).
+## Installazione e configurazione di Pi-hole
+Per l'installazione e la configurazione di Pi-hole, ho seguito la [documentazione ufficiale](https://docs.pi-hole.net/).
 
 ### Prerequisiti
 Riferimento alla documentazione ufficiale: [Prerequisites](https://docs.pi-hole.net/main/prerequisites/)
@@ -32,7 +32,7 @@ curl -sSL https://install.pi-hole.net | bash
 pihole -a -p [NUOVA_PASSWORD]
 ```
 
-Testare il corretto funzionamento di Pi-Hole all'indirizzo "[NOME_HOST]/admin" o [INDIRIZZO_IP]/admin
+Testare il corretto funzionamento di Pi-hole all'indirizzo "[NOME_HOST]/admin" o [INDIRIZZO_IP]/admin
 
 ### Aggiornamento
 Riferimento alla documentazione ufficiale: [Updating](https://docs.pi-hole.net/main/update/)
@@ -135,7 +135,7 @@ Questo comando dovrebbe riportare lo status `NOERROR`
 
 Se entrambi sono i comandi riportano gli status correttamente allora la validazione DNSSEC funziona.
 
-### Configurazione di Pi-Hole
+### Configurazione di Pi-hole
 * Accedere alla pagina **[NOME_HOST]/admin** oppure **[INDIRIZZO_IP]/admin**
 * Cliccare su:
     - `Settings`
@@ -169,6 +169,5 @@ Rieseguendo il comando `cat /etc/resolv.conf`, l'output dovrebbe essere:
 nameserver 127.0.0.1
 ```
 
-
-
-
+# Note finali
+Leggere la [documentazione ufficiale](https://docs.pi-hole.net/) per eventuali ulteriori informazioni su Pi-hole e Unbound. La guida è stata redatta molto bene. Semplice da seguire ma anche adeguatamente tecnica in modo da capire ciò che si sta facendo.
