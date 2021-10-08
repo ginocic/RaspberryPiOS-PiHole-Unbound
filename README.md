@@ -8,7 +8,7 @@ Per l'installazione e la configurazione di Pi-Hole, ho seguito la [documentazion
 ### Prerequisiti
 Riferimento alla documentazione ufficiale: [Prerequisites](https://docs.pi-hole.net/main/prerequisites/)
 
-### Applicare le seguenti regole al firewall (Raspberry Pi OS, di solito, installa di default IPTables)
+Applicare le seguenti regole al firewall (Raspberry Pi OS, di solito, installa di default IPTables)
 ```bash
 sudo su -
 iptables -I INPUT 1 -s 192.168.0.0/16 -p tcp -m tcp --dport 80 -j ACCEPT
