@@ -128,9 +128,23 @@ dig sigfail.verteiltesysteme.net @127.0.0.1 -p 5335
 ```
 Questo comando dovrebbe riportare lo status `SERVFAIL`
 
+```bash
+dig sigok.verteiltesysteme.net @127.0.0.1 -p 5335
+```
+Questo comando dovrebbe riportare lo status `NOERROR`
 
+Se entrambi sono i comandi riportano gli status correttamente allora la validazione DNSSEC funziona.
 
-
+### Configurazione di Pi-Hole
+Accedere alla pagina [NOME_HOST]/admin oppure [INDIRIZZO_IP]/admin
+Cliccare su:
+  1. `Settings`
+  2. `DNS`
+Deselezionare gli tutti `Upstream DNS Servers` eventualmente presenti.
+Selezionare `Custom 1 (IPv4)`
+Aggiungere `127.0.0.1#5335` nella casella di testo
+Cliccare su `Save` (in fondo alla pagina)
+Aprire una sessione ssh oppure accedere al terminale  
 
 
 
